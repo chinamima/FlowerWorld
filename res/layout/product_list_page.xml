@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/product_list_advanced_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:gravity="center|left"
+        android:text="@string/common_word"
+        android:textColor="#ffff0000"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/product_list_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/product_list_advanced_type"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@+id/product_list_advanced_type"
+        android:gravity="center|left"
+        android:text="@string/common_word"
+        android:textColor="#ff000000"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/product_list_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_below="@id/product_list_total"
+        android:src="#ffcccccc" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/product_list_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/product_list_divider"
+        android:divider="#ffaaaaaa"
+        android:dividerHeight="1px"
+        ptr:ptrHeaderBackground="@android:color/white"
+        ptr:ptrHeaderTextColor="@android:color/black"
+        ptr:ptrMode="pullUpFromBottom" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</RelativeLayout>

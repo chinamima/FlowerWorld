@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff" >
+
+    <RelativeLayout
+        android:id="@+id/banner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/banner_height"
+        android:layout_alignParentTop="true" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sign_up_search_enterprise_remarks"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_below="@id/banner_layout"
+        android:text="@string/signup_searchenterprise_remarks"
+        android:textColor="#ff444444"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/sign_up_search_enterprise_search_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_search_enterprise_remarks"
+        android:layout_margin="5dip"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/sign_up_search_enterprise_key_word_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/signup_searchenterprise_search_height"
+            android:gravity="center_vertical"
+            android:text="@string/signup_searchenterprise_key_word"
+            android:textColor="#ff444444"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/sign_up_search_enterprise_key_word"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/signup_searchenterprise_search_height"
+            android:layout_toLeftOf="@+id/sign_up_search_enterprise_search_button"
+            android:layout_toRightOf="@id/sign_up_search_enterprise_key_word_text"
+            android:background="@drawable/input_corner_rectangle"
+            android:gravity="center_vertical"
+            android:textColor="#ff444444"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/sign_up_search_enterprise_search_button"
+            android:layout_width="70dip"
+            android:layout_height="@dimen/signup_searchenterprise_search_height"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/blue_button_selector"
+            android:gravity="center"
+            android:text="@string/signup_searchenterprise_search"
+            android:textColor="#ff666666"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sign_up_search_enterprise_result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_search_enterprise_search_layout"
+        android:layout_margin="5dip"
+        android:text="@string/signup_searchenterprise_not_exist"
+        android:textColor="#ff999999"
+        android:textSize="15sp" />
+
+    <ListView
+        android:id="@+id/sign_up_search_enterprise_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sign_up_search_enterprise_tips"
+        android:layout_below="@id/sign_up_search_enterprise_result"
+        android:layout_margin="5dip" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/sign_up_search_enterprise_tips"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sign_up_search_enterprise_new_button"
+        android:layout_margin="5dip"
+        android:text="@string/signup_searchenterprise_search_result_1"
+        android:textColor="#ff999999"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/sign_up_search_enterprise_new_button"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/red_button_selector"
+        android:text="@string/signup_searchenterprise_new"
+        android:textColor="#ffffffff"
+        android:textSize="18sp" />
+
+   <!--  <include
+        android:id="@id/bottom_btn_layout"
+        layout="@layout/bottom_image_text_button" /> -->
+
+</RelativeLayout>

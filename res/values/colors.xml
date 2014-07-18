@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bottom_button_normal">#ff3b4043</color>
+    <color name="bottom_button_pressed">#ff494949</color>
+ <!-- #ff707070 -->
+    <color name="tab_pressed">#eef15f5f</color>
+    <color name="tab_normal">#ffffffff</color>
+    <color name="tab_text_pressed">#ffffffff</color>
+    <color name="tab_text_normal">#ffff0000</color>
+    <color name="page_background">#ffffffff</color>
+    <color name="fei_hong">#fff15f5f</color>
+
+</resources>

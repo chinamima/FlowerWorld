@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background" >
+
+    <RelativeLayout
+        android:id="@+id/banner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/banner_height"
+        android:layout_alignParentTop="true" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner_layout"
+        android:padding="5dip" >
+
+        <RelativeLayout
+            android:id="@+id/friend_add_list_layout_search"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip" >
+
+            <Button
+                android:id="@+id/friend_add_list_button_search"
+                android:layout_width="42dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/blue_button_selector"
+                android:text="搜索"
+                android:textColor="#ff606060"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/friend_add_list_edit_search_word"
+                android:layout_width="fill_parent"
+                android:layout_height="25dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/friend_add_list_button_search"
+                android:background="@drawable/input_corner_rectangle"
+                android:hint="搜索"
+                android:inputType="text"
+                android:textColor="#ff606060"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/friend_add_list_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/friend_add_list_layout_search"
+            android:divider="#ffaaaaaa"
+            android:dividerHeight="1px"
+            ptr:ptrHeaderBackground="@android:color/white"
+            ptr:ptrHeaderTextColor="@android:color/black"
+            ptr:ptrMode="pullUpFromBottom" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

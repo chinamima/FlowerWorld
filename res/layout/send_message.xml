@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/banner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/banner_height" >
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/send_message_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/input_corner_rectangle"
+        android:gravity="left|center_vertical"
+        android:hint="标题"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/send_message_text_content"
+        android:layout_width="match_parent"
+        android:layout_height="120dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/input_corner_rectangle"
+        android:gravity="left|top"
+        android:hint="内容"
+        android:inputType="textMultiLine|textImeMultiLine" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="130dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/send_message_layout_photo_show"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/send_message_button_upload_photo"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:layout_gravity="right"
+        android:layout_margin="5dip"
+        android:background="@drawable/blue_button_selector"
+        android:text="上传图片"
+        android:textColor="#ff939393"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/send_message_button_send_msg"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/red_button_selector"
+        android:text="确定上传"
+        android:textColor="#ffffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

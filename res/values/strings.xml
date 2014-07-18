@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">FlowerWorld</string>
+    <string name="action_settings">settings</string>
+
+    <!-- system -->
+    <string name="network_unenable">网络不可用</string>
+    <string name="error_no_network">网络不可用</string>
+    <string name="error_connect_server_failed">连接服务器失败</string>
+    <string name="error_time_out">请求超时</string>
+    <string name="error_response_empty">响应内容为空</string>
+    <string name="error_request_parameter">请求参数错误</string>
+    <string name="error_illegal_url">链接错误</string>
+    <string name="error_default">http请求发生错误</string>
+    <string name="loading">请稍后&#8230;</string>
+    <!-- system -->
+
+
+    <!-- common -->
+    <string name="common_word">文字</string>
+    <string name="go_back">返回</string>
+    <string name="select_title">列表</string>
+    <string name="enterprise_type_title">企业类型</string>
+    <string name="please_input">请输入</string>
+    <string name="home_page_browse">浏览</string>
+    <string name="home_page_search">查找</string>
+    <string name="home_page_message">消息</string>
+    <string name="home_page_manage">管理</string>
+    <string name="home_page_friend">好友</string>
+    <string name="home_page_more">更多</string>
+    <string name="send">发送</string>
+    <string name="confirm">确定</string>
+    <string name="cancle">取消</string>
+    <string name="product_type">产品类型</string>
+    <string name="form_item_must">*</string>
+    <string name="form_item_select">点击选择</string>
+    <string name="form_item_field">字段</string>
+    <string name="select">筛选</string>
+    <!-- common -->
+
+
+    <!-- home page -->
+    <string name="home_page_sign_up">注册</string>
+    <string name="home_page_sign_in">登陆</string>
+    <string name="home_page_title">花卉世界网</string>
+    <string name="home_page_home_page">首页</string>
+    <string name="home_page_information">资讯</string>
+    <string name="home_page_product">产品</string>
+    <string name="home_page_enterprise">企业</string>
+    <string name="home_page_supply_demand">供求</string>
+    <string name="home_page_bbs">论坛</string>
+    <!-- home page -->
+
+
+    <!-- sign up -->
+    <string name="signup_title">注册</string>
+    <string name="signup_declare">说明</string>
+    <string name="signup_username">用户名</string>
+    <string name="signup_password">密码</string>
+    <string name="signup_password_again">确认密码</string>
+    <string name="signup_email">邮箱</string>
+    <string name="signup_look_user_agreement"><u>查看用户协议</u></string>
+    <string name="signup_consent_agreement">同意协议</string>
+    <string name="signup_next">立即注册 下一步</string>
+    <string name="signup_username_remarks">6&#8211;15个字符,英文与数字,注册成功后不可修改</string>
+    <string name="signup_password_remarks">6&#8211;15个字符,英文与数字</string>
+    <string name="signup_input_hint_word">必填</string>
+    <!-- sign up -->
+
+
+    <!-- sign in -->
+    <string name="signin_title">登陆</string>
+    <string name="signin_sign_in">登陆</string>
+    <string name="signin_sign_up">注册</string>
+    <string name="signin_username">会员账户</string>
+    <string name="signin_password">登陆密码</string>
+    <string name="signin_remarks">您登陆一次即可，要退出账户，请在“更多”->“设置”中完成。</string>
+    <!-- sign in -->
+
+
+    <!-- sign up select type -->
+    <string name="signup_selecttype_title">注册</string>
+    <string name="signup_selecttype_banner_right">说明</string>
+    <string name="signup_selecttype_type">从以下3个类型中选择一种</string>
+    <string name="signup_selecttype_inner">花卉行业人士</string>
+    <string name="signup_selecttype_outer">非花卉行业人士</string>
+    <!-- sign up select type -->
+
+
+    <!-- sign up search enterprise -->
+    <string name="signup_searchenterprise_title">注册</string>
+    <string name="signup_searchenterprise_banner_right">说明</string>
+    <string name="signup_searchenterprise_remarks">查看我的企业是否已存在</string>
+    <string name="signup_searchenterprise_key_word">企业关键字</string>
+    <string name="signup_searchenterprise_search">搜索</string>
+    <string name="signup_searchenterprise_not_exist">所查询的企业不存在</string>
+    <string name="signup_searchenterprise_search_result_1">请从下面的</string>
+    <string name="signup_searchenterprise_search_result_2">个企业中选择一个</string>
+    <string name="signup_searchenterprise_tips">如果这些不是您的企业，您可以</string>
+    <string name="signup_searchenterprise_new">新建一个企业</string>
+    <!-- sign up search enterprise -->
+
+
+    <!-- sign up new enterprise -->
+    <string name="signup_newenterprise_title">注册</string>
+    <string name="signup_newenterprise_banner_right">说明</string>
+    <string name="signup_newenterprise_new">新建企业</string>
+    <string name="signup_newenterprise_enterprise_information">企业资料</string>
+    <string name="signup_newenterprise_enterprise_name">企业全称</string>
+    <string name="signup_newenterprise_enterprise_name_remarks">如有工商登记，请填写正式名称，如无，可写“XXX市XXX”</string>
+    <string name="signup_newenterprise_enterprise_short">企业简称</string>
+    <string name="signup_newenterprise_enterprise_short_remarks">8个汉字以内，建议如“广州劲天园艺”的形式</string>
+    <string name="signup_newenterprise_enterprise_location">所在地</string>
+    <string name="signup_newenterprise_enterprise_type_1">企业类型1</string>
+    <string name="signup_newenterprise_enterprise_type_2">企业类型2</string>
+    <string name="signup_newenterprise_enterprise_type_3">企业类型3</string>
+    <string name="signup_newenterprise_personal">个人资料</string>
+    <string name="signup_newenterprise_personal_real_name">真实姓名</string>
+    <string name="signup_newenterprise_personal_gender">性别</string>
+    <string name="signup_newenterprise_personal_dept">部门职位</string>
+    <string name="signup_newenterprise_personal_phone_1">手机1</string>
+    <string name="signup_newenterprise_personal_phone_2">手机2</string>
+    <string name="signup_newenterprise_personal_tel">固定电话</string>
+    <string name="signup_newenterprise_personal_fax">传真</string>
+    <string name="signup_newenterprise_personal_qq">QQ号码</string>
+    <string name="signup_newenterprise_finish">完成注册</string>
+    <string name="signup_newenterprise_clk_select">点击选择</string>
+    <string name="signup_newenterprise_must">*</string>
+    <!-- sign up new enterprise -->
+
+
+    <!-- multi select -->
+    <string name="multi_select_all">全选</string>
+    <string name="multi_select_confirm">确定</string>
+    <!-- multi select -->
+
+
+    <!-- location select -->
+    <string name="province_select_title">省份列表</string>
+    <string name="city_select_title">城市列表</string>
+    <!-- location select -->
+
+
+    <!-- sign up staff -->
+    <string name="signup_staff_title">注册</string>
+    <string name="signup_staff_banner_right">说明</string>
+    <string name="signup_staff_has">有所属企业</string>
+    <string name="signup_staff_personal_real_name">真实姓名</string>
+    <string name="signup_staff_personal_gender">性别</string>
+    <string name="signup_staff_personal_dept">部门职位</string>
+    <string name="signup_staff_personal_phone_1">手机1</string>
+    <string name="signup_staff_personal_phone_2">手机2</string>
+    <string name="signup_staff_personal_tel">固定电话</string>
+    <string name="signup_staff_personal_fax">传真</string>
+    <string name="signup_staff_personal_qq">QQ号码</string>
+    <string name="signup_staff_finish">完成注册</string>
+    <string name="signup_staff_clk_select">点击选择</string>
+    <string name="signup_staff_enterprise_location">所在地</string>
+    <string name="signup_staff_must">*</string>
+    <!-- sign up staff -->
+
+
+    <!-- sign up enterprise finish -->
+    <string name="signup_enterprisefinish_title">注册</string>
+    <string name="signup_enterprisefinish_thanks">感谢您的注册！</string>
+    <string name="signup_enterprisefinish_welcome">&#160;&#160;&#160;&#160;您的企业已经成为花卉世界网普通会员，如您已缴费，客服将尽快提升您的会员等级。</string>
+    <string name="signup_enterprisefinish_remarks">要修改企业资料或个人资料，请到“更多”-“企业后台”、“个人后台”中操作。</string>
+    <string name="signup_enterprisefinish_button_1">了解会员服务与收费</string>
+    <string name="signup_enterprisefinish_button_2">到企业后台进一步完善资料</string>
+    <string name="signup_enterprisefinish_button_3">以后再补，返回到“浏览”逛逛</string>
+    <!-- sign up enterprise finish -->
+
+
+    <!-- sign up staff finish -->
+    <string name="signup_stafffinish_title">注册</string>
+    <string name="signup_stafffinish_thanks">感谢您的注册！</string>
+    <string name="signup_stafffinish_welcome">&#160;&#160;&#160;&#160;你已经成为花卉世界网个人会员，要修改个人资料或转换身份类型，请到“更多”-“个人后台”中操作。</string>
+    <string name="signup_stafffinish_button">我知道了</string>
+    <!-- sign up staff finish -->
+
+
+    <!-- sign up free -->
+    <string name="signup_free_title">注册</string>
+    <string name="signup_free_banner_right">说明</string>
+    <string name="signup_free_text">自由职业人士</string>
+    <string name="signup_free_username">账户名称</string>
+    <string name="signup_free_real_name">真实姓名</string>
+    <string name="signup_free_gender">性别</string>
+    <string name="signup_free_verification">验证码</string>
+    <string name="signup_free_verification_button">获取验证码</string>
+    <string name="signup_free_phone_1">手机1</string>
+    <string name="signup_free_phone_2">手机2</string>
+    <string name="signup_free_tel">固定电话</string>
+    <string name="signup_free_fax">传真</string>
+    <string name="signup_free_qq">QQ号码</string>
+    <string name="signup_free_location">所在地</string>
+    <string name="signup_free_specific_address">具体地址</string>
+    <string name="signup_free_introduction">个人简介</string>
+    <string name="signup_free_introduction_remarks">例如“学生”、“档主”、“司机”等。</string>
+    <string name="signup_free_finish">完成注册</string>
+    <string name="signup_free_clk_select">点击选择</string>
+    <string name="signup_free_must">*</string>
+    <!-- sign up free -->
+
+
+    <!-- sign up interest -->
+    <string name="signup_interest_title">注册</string>
+    <string name="signup_interest_banner_right">说明</string>
+    <string name="signup_interest_text">花卉爱好者</string>
+    <string name="signup_interest_username">账户名称</string>
+    <string name="signup_interest_real_name">真实姓名</string>
+    <string name="signup_interest_gender">性别</string>
+    <string name="signup_interest_phone">手机</string>
+    <string name="signup_interest_tel">固定电话</string>
+    <string name="signup_interest_qq">QQ号码</string>
+    <string name="signup_interest_location">所在地</string>
+    <string name="signup_interest_finish">完成注册</string>
+    <string name="signup_interest_clk_select">点击选择</string>
+    <string name="signup_interest_must">*</string>
+    <!-- sign up interest -->
+
+
+    <!-- product list item -->
+    <string name="product_list_item_price">价格：</string>
+    <string name="product_list_item_price_talk">面议</string>
+    <!-- product list item -->
+
+
+    <!-- product list -->
+    <string name="product_list_select">筛选</string>
+    <!-- product list -->
+
+
+    <!-- enterprise list -->
+    <string name="enterprise_list_select">筛选</string>
+    <string name="enterprise_list_keyword">主营：</string>
+    <string name="enterprise_list_location">地区：</string>
+    <string name="enterprise_list_tel">电话：</string>
+    <!-- enterprise list -->
+
+
+    <!-- supply demand list -->
+    <string name="supply_demand_list_select">筛选</string>
+    <string name="supply_demand_list_publish">我要发布</string>
+    <!-- supply demand list -->
+
+
+    <!-- search main -->
+    <string name="search_main_title">查找</string>
+    <string name="search_main_quick_search">快速搜索</string>
+    <string name="search_main_product">产品</string>
+    <string name="search_main_enterprise">企业</string>
+    <string name="search_main_demand">求购</string>
+    <string name="search_main_search">搜索</string>
+    <string name="search_main_advanced_search">高级搜索</string>
+    <string name="search_main_select_product_type">选择产品分类</string>
+    <string name="search_main_publish_enquiry">发布询价</string>
+    <string name="search_main_my_enquiry"><u>查看我发的询价</u></string>
+    <!-- search main -->
+
+
+    <!-- search result -->
+    <string name="search_result_title">搜索结果</string>
+    <string name="search_result_fail">抱歉，暂无搜索结果！</string>
+    <string name="search_result_select">筛选</string>
+    <!-- search result -->
+
+
+    <!-- search detail product -->
+    <string name="search_detail_product_title">产品浏览</string>
+    <string name="search_detail_product_price">价格：</string>
+    <string name="search_detail_product_price_talk">面议</string>
+    <string name="search_detail_product_previous">上一个</string>
+    <string name="search_detail_product_next">下一个</string>
+    <string name="search_detail_product_enquiry">询问详情</string>
+    <string name="search_detail_product_description">产品描述</string>
+    <!-- search detail product -->
+
+
+    <!-- search advanced main -->
+    <string name="search_advanced_main_title">高级搜索</string>
+    <string name="search_advanced_main_must">*</string>
+    <string name="search_advanced_main_type">类型</string>
+    <string name="search_advanced_main_product_name">产品名称</string>
+    <string name="search_advanced_main_field">字段</string>
+    <string name="search_advanced_main_location">地区</string>
+    <string name="search_advanced_main_combine">合并商家</string>
+    <string name="search_advanced_main_select">点击选择</string>
+    <string name="search_advanced_main_tips">（合并商家是指一个供应商只显示一个产品）</string>
+    <string name="search_advanced_main_search">搜索</string>
+    <!-- search advanced main -->
+
+
+    <!-- search advanced result -->
+    <string name="search_advanced_result_title">高级搜索结果</string>
+    <string name="search_advanced_result_banner_right">筛选</string>
+    <!-- search advanced result -->
+
+
+    <!-- friend list -->
+    <string name="friend_list_title">好友</string>
+    <string name="friend_list_banner_left">收藏</string>
+    <string name="friend_list_banner_right">分组</string>
+    <string name="friend_list_empty">点击“添加”，从行业人士中添加好友。在添加好友前，建议点击“分组”来设定好友分组。</string>
+    <string name="friend_list_mass_send">群发</string>
+    <string name="friend_list_search">搜索</string>
+    <string name="friend_list_add">添加</string>
+    <string name="friend_list_all">所有</string>
+    <!-- friend list -->
+
+
+    <!-- friend detail -->
+    <string name="friend_detail_title">好友</string>
+    <!-- friend detail -->
+
+
+    <!-- send message -->
+    <string name="send_message_title">发送消息</string>
+    <!-- send message -->
+
+
+    <!-- widget photo show -->
+    <string name="widget_photo_show_delete"><u>删除</u></string>
+    <!-- widget photo show -->
+
+
+    <!-- widget photo select -->
+    <string name="widget_photo_select_delete"><u>删除</u></string>
+    <string name="widget_photo_select_title_hint">图片标题</string>
+    <!-- widget photo select -->
+
+
+    <!-- dialog photo upload -->
+    <string name="dialog_photo_upload_text">确定上传</string>
+    <!-- dialog photo upload -->
+
+
+    <!-- friend group -->
+    <string name="friend_group_title">好友分组</string>
+    <string name="friend_group_tip">带<font color="red">*</font>为默认分组，不可删除</string>
+    <string name="friend_group_max">最多可建8个分组</string>
+    <string name="friend_group_new_hint">新建一个分组，请输入名称</string>
+    <string name="friend_group_add">添加</string>
+    <!-- friend group -->
+
+
+    <!-- dialog friend operation -->
+    <string name="dialog_friend_operation_all_transfer">全组转移</string>
+    <string name="dialog_friend_operation_rename">重命名</string>
+    <string name="dialog_friend_operation_delete">删除</string>
+    <string name="dialog_friend_operation_delete_tip">不能删除有好友的分组</string>
+    <!-- dialog friend operation -->
+    
+    
+
+    <!-- dialog friend cancel -->
+    <string name="dialog_friend_cancel">确定取消</string>
+    <!-- dialog friend cancel -->
+    
+    <!-- add friend -->
+    <string name="add_friend_title">行业人事</string>
+    <string name="friend_add_relation">添加好友关系</string>
+    <string name="only_collect_enterprise">仅收藏该企业</string>
+    <string name="friend_add_send_message">发消息</string>
+    <!-- add friend -->
+
+    <!-- favorite -->
+    <string name="favorite_title">收藏</string>
+    <!-- favorite -->
+
+    <!-- more -->
+    <string name="feedback_title">意见反馈</string>
+    <string name="background_main_bottom_menu_member_center">会员\n中心</string>
+    <string name="background_main_bottom_menu_template">模板\n管理</string>
+    <string name="background_main_bottom_menu_product">产品</string>
+    <string name="background_main_bottom_menu_wechat">微信\n平台</string>
+    <string name="exit">退出</string>
+    <!-- more -->
+</resources>

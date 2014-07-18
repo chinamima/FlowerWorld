@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/page_background" >
+
+    <RelativeLayout
+        android:id="@+id/banner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/banner_height"
+        android:layout_alignParentTop="true" >
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_btn_layout"
+        android:layout_below="@id/banner_layout"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="@dimen/signup_staff_left_text_width"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/signup_staff_has"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/signup_staff_left_text_size" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/signup_staff_item_margin_bottom"
+                android:layout_marginTop="@dimen/signup_staff_item_margin_top" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/signup_staff_left_text_height"
+                    android:gravity="center_vertical"
+                    android:text="@string/signup_staff_must"
+                    android:textColor="#ffff0000"
+                    android:textSize="@dimen/signup_staff_left_text_size" />
+
+                <TextView
+                    android:id="@+id/sign_up_staff_text_personal_real_name"
+                    android:layout_width="@dimen/signup_staff_left_text_width"
+                    android:layout_height="@dimen/signup_staff_left_text_height"
+                    android:layout_marginLeft="@dimen/signup_staff_left_text_margin_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/signup_staff_personal_real_name"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/signup_staff_left_text_size" />
+
+                <EditText
+                    android:id="@+id/sign_up_staff_edit_personal_real_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/signup_staff_right_edit_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/signup_staff_right_edit_margin_left"
+                    android:layout_toRightOf="@id/sign_up_staff_text_personal_real_name"
+                    android:background="@drawable/input_corner_rectangle"
+                    android:hint=""
+                    android:maxLength="15" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/signup_staff_item_margin_bottom"
+                android:layout_marginTop="@dimen/signup_staff_item_margin_top" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/signup_staff_left_text_height"
+                    android:gravity="center_vertical"
+                    android:text="@string/signup_staff_must"
+                    android:textColor="#ffff0000"
+                    android:textSize="@dimen/signup_staff_left_text_size" />
+
+                <TextView
+                    android:id="@+id/sign_up_staff_text_personal_gender"
+                    android:layout_width="@dimen/signup_staff_left_text_width"
+                    android:layout_height="@dimen/signup_staff_left_text_height"
+                    android:layout_marginLeft="@dimen/signup_staff_left_text_margin_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/signup_staff_personal_gender"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/signup_staff_left_text_size" />
+
+                <com.flowerworld.app.ui.widget.SingleSelectButton
+                    android:id="@+id/sign_up_staff_button_personal_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/signup_staff_right_edit_margin_left"
+                    android:layout_toRightOf="@id/sign_up_staff_text_personal_gender"
+                    android:background="#00000000" >
+                </com.flowerworld.app.ui.widget.SingleSelectButton>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/signup_staff_item_margin_bottom"
+                android:layout_marginTop="@dimen/signup_staff_item_margin_top" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/signup_staff_left_text_height"
+                    android:gravity="center_vertical"
+                    android:text="@string/signup_staff_must"
+                    android:textColor="#ffff0000"
+                    android:textSize="@dimen/signup_staff_left_text_size" />
+
+                <TextView
+                    android:id="@+id/sign_up_staff_text_personal_dept"
+                    android:layout_width="@dimen/signup_staff_left_text_width"
+                    android:layout_height="@dimen/signup_staff_left_text_height"
+                    android:layout_marginLeft="@dimen/signup_staff_left_text_margin_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/signup_staff_personal_dept"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/signup_staff_left_text_size" />
+
+                <EditText
+                    android:id="@+id/sign_up_staff_edit_personal_dept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/signup_staff_right_edit_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/signup_staff_right_edit_margin_left"
+                    android:layout_toRightOf="@id/sign_up_staff_text_personal_dept"
+                    android:background="@drawable/input_corner_rectangle"
+                    android:hint=""
+                    android:maxLength="15" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/signup_staff_item_margin_bottom"
+                android:layout_marginTop="@dimen/signup_staff_item_margin_top" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/signup_staff_left_text_height"
+                    android:gravity="center_vertical"
+                    android:text="@string/signup_staff_must"
+                    android:textColor="#ffff0000"
+                    android:textSize="@dimen/signup_staff_left_text_size" />
+
+                <TextView
+                    android:id="@+id/sign_up_staff_text_personal_phone_1"
+                    android:layout_width="@dimen/signup_staff_left_text_width"
+                    android:layout_height="@dimen/signup_staff_left_text_height"
+                    android:layout_marginLeft="@dimen/signup_staff_left_text_margin_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/signup_staff_personal_phone_1"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/signup_staff_left_text_size" />
+
+                <EditText
+                    android:id="@+id/sign_up_staff_edit_personal_phone_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/signup_staff_right_edit_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/signup_staff_right_edit_margin_left"
+                    android:layout_toRightOf="@id/sign_up_staff_text_personal_phone_1"
+                    android:background="@drawable/input_corner_rectangle"
+                    android:hint=""
+                    android:inputType="phone"
+                    android:maxLength="15" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/signup_staff_item_margin_bottom"
+                android:layout_marginTop="@dimen/signup_staff_item_margin_top" >
+
+                <TextView
+                    android:id="@+id/sign_up_staff_text_personal_phone_2"
+                    android:layout_width="@dimen/signup_staff_left_text_width"
+                    android:layout_height="@dimen/signup_staff_left_text_height"
+                    android:layout_marginLeft="@dimen/signup_staff_left_text_margin_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/signup_staff_personal_phone_2"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/signup_staff_left_text_size" />
+
+                <EditText
+                    android:id="@+id/sign_up_staff_edit_personal_phone_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/signup_staff_right_edit_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/signup_staff_right_edit_margin_left"
+                    android:layout_toRightOf="@id/sign_up_staff_text_personal_phone_2"
+                    android:background="@drawable/input_corner_rectangle"
+                    android:hint=""
+                    android:inputType="phone"
+                    android:maxLength="15" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/signup_staff_item_margin_bottom"
+                android:layout_marginTop="@dimen/signup_staff_item_margin_top" >
+
+                <TextView
+                    android:id="@+id/sign_up_staff_text_personal_tel"
+                    android:layout_width="@dimen/signup_staff_left_text_width"
+                    android:layout_height="@dimen/signup_staff_left_text_height"
+                    android:layout_marginLeft="@dimen/signup_staff_left_text_margin_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/signup_staff_personal_tel"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/signup_staff_left_text_size" />
+
+                <EditText
+                    android:id="@+id/sign_up_staff_edit_personal_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/signup_staff_right_edit_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/signup_staff_right_edit_margin_left"
+                    android:layout_toRightOf="@id/sign_up_staff_text_personal_tel"
+                    android:background="@drawable/input_corner_rectangle"
+                    android:hint=""
+                    android:maxLength="15" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/signup_staff_item_margin_bottom"
+                android:layout_marginTop="@dimen/signup_staff_item_margin_top" >
+
+                <TextView
+                    android:id="@+id/sign_up_staff_text_personal_fax"
+                    android:layout_width="@dimen/signup_staff_left_text_width"
+                    android:layout_height="@dimen/signup_staff_left_text_height"
+                    android:layout_marginLeft="@dimen/signup_staff_left_text_margin_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/signup_staff_personal_fax"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/signup_staff_left_text_size" />
+
+                <EditText
+                    android:id="@+id/sign_up_staff_edit_personal_fax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/signup_staff_right_edit_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/signup_staff_right_edit_margin_left"
+                    android:layout_toRightOf="@id/sign_up_staff_text_personal_fax"
+                    android:background="@drawable/input_corner_rectangle"
+                    android:hint=""
+                    android:maxLength="15" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/signup_staff_item_margin_bottom"
+                android:layout_marginTop="@dimen/signup_staff_item_margin_top" >
+
+                <TextView
+                    android:id="@+id/sign_up_staff_text_personal_qq"
+                    android:layout_width="@dimen/signup_staff_left_text_width"
+                    android:layout_height="@dimen/signup_staff_left_text_height"
+                    android:layout_marginLeft="@dimen/signup_staff_left_text_margin_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/signup_staff_personal_qq"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/signup_staff_left_text_size" />
+
+                <EditText
+                    android:id="@+id/sign_up_staff_edit_personal_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/signup_staff_right_edit_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/signup_staff_right_edit_margin_left"
+                    android:layout_toRightOf="@id/sign_up_staff_text_personal_qq"
+                    android:background="@drawable/input_corner_rectangle"
+                    android:hint=""
+                    android:maxLength="15" />
+            </RelativeLayout>
+
+          <!--   <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/signup_staff_item_margin_bottom"
+                android:layout_marginTop="@dimen/signup_staff_item_margin_top" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/signup_staff_left_text_height"
+                    android:gravity="center_vertical"
+                    android:text="@string/signup_staff_must"
+                    android:textColor="#ffff0000"
+                    android:textSize="@dimen/signup_staff_left_text_size" />
+
+                <TextView
+                    android:id="@+id/sign_up_staff_text_enterprise_location"
+                    android:layout_width="@dimen/signup_staff_left_text_width"
+                    android:layout_height="@dimen/signup_staff_left_text_height"
+                    android:layout_marginLeft="@dimen/signup_staff_left_text_margin_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/signup_staff_enterprise_location"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/signup_staff_left_text_size" />
+
+                <Button
+                    android:id="@+id/sign_up_staff_button_enterprise_location"
+                    android:layout_width="@dimen/signup_staff_right_button_width"
+                    android:layout_height="@dimen/signup_staff_right_button_height"
+                    android:layout_marginLeft="@dimen/signup_staff_right_button_margin_left"
+                    android:layout_toRightOf="@id/sign_up_staff_text_enterprise_location"
+                    android:background="@drawable/blue_button_selector"
+                    android:text="@string/signup_staff_clk_select"
+                    android:textColor="#ff777777"
+                    android:textSize="@dimen/signup_staff_right_button_text_size" />
+            </RelativeLayout>
+ -->
+            <Button
+                android:id="@+id/sign_up_staff_finish"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/red_button_selector"
+                android:gravity="center"
+                android:text="@string/signup_staff_finish"
+                android:textColor="#ffffffff"
+                android:textSize="19sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- <include
+        android:id="@id/bottom_btn_layout"
+        layout="@layout/bottom_image_text_button" /> -->
+
+</RelativeLayout>

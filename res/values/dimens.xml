@@ -1,0 +1,232 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- common -->
+    <dimen name="banner_height">50dip</dimen>
+    <!-- common -->
+
+
+    <!-- sign in -->
+    <dimen name="signin_edit_height">50dip</dimen>
+    <dimen name="signin_edit_size">14sp</dimen>
+    <dimen name="signin_button_height">50dip</dimen>
+    <dimen name="signin_button_width">130dip</dimen>
+    <dimen name="signin_button_size">16sp</dimen>
+    <!-- sign in -->
+
+
+    <!-- sign up -->
+    <dimen name="signup_left_text_width">70dip</dimen>
+    <dimen name="signup_left_text_height">45dip</dimen>
+    <dimen name="signup_left_text_size">16sp</dimen>
+    <dimen name="signup_right_edit_height">45dip</dimen>
+    <dimen name="signup_right_edit_margin_left">5dip</dimen>
+    <dimen name="signup_item_margin_top">3dip</dimen>
+    <dimen name="signup_item_margin_bottom">3dip</dimen>
+    <!-- sign up -->
+
+
+    <!-- sign up select type -->
+    <dimen name="signup_selecttype_item_margin_left">10dip</dimen>
+    <dimen name="signup_selecttype_item_margin_right">10dip</dimen>
+    <dimen name="signup_selecttype_item_text_size">18sp</dimen>
+    <dimen name="signup_selecttype_item_height">90dip</dimen>
+    <dimen name="signup_selecttype_item_width">245dip</dimen>
+    <!-- sign up select type -->
+
+
+    <!-- sign up search enterprise -->
+    <dimen name="signup_searchenterprise_search_height">40dip</dimen>
+    <!-- sign up search enterprise -->
+
+
+    <!-- sign up new enterprise -->
+    <dimen name="signup_newenterprise_left_text_width">80dip</dimen>
+    <dimen name="signup_newenterprise_left_text_height">45dip</dimen>
+    <dimen name="signup_newenterprise_left_text_margin_left">10dip</dimen>
+    <dimen name="signup_newenterprise_left_text_size">14sp</dimen>
+    <dimen name="signup_newenterprise_right_edit_height">45dip</dimen>
+    <dimen name="signup_newenterprise_right_edit_margin_left">5dip</dimen>
+    <dimen name="signup_newenterprise_right_button_height">45dip</dimen>
+    <dimen name="signup_newenterprise_right_button_width">130dip</dimen>
+    <dimen name="signup_newenterprise_right_button_text_size">16sp</dimen>
+    <dimen name="signup_newenterprise_right_button_margin_left">5dip</dimen>
+    <dimen name="signup_newenterprise_item_margin_top">3dip</dimen>
+    <dimen name="signup_newenterprise_item_margin_bottom">3dip</dimen>
+    <!-- sign up new enterprise -->
+
+
+    <!-- select -->
+    <dimen name="select_left_text_size">17sp</dimen>
+    <dimen name="multi_select_button_all_width">60dip</dimen>
+    <dimen name="multi_select_button_all_height">40dip</dimen>
+    <dimen name="multi_select_item_height">40dip</dimen>
+    <dimen name="multi_select_item_width">40dip</dimen>
+    <!-- select -->
+
+
+    <!-- sign up staff -->
+    <dimen name="signup_staff_left_text_width">80dip</dimen>
+    <dimen name="signup_staff_left_text_height">45dip</dimen>
+    <dimen name="signup_staff_left_text_margin_left">10dip</dimen>
+    <dimen name="signup_staff_left_text_size">16sp</dimen>
+    <dimen name="signup_staff_right_edit_height">45dip</dimen>
+    <dimen name="signup_staff_right_edit_margin_left">5dip</dimen>
+    <dimen name="signup_staff_right_button_height">45dip</dimen>
+    <dimen name="signup_staff_right_button_width">130dip</dimen>
+    <dimen name="signup_staff_right_button_text_size">16sp</dimen>
+    <dimen name="signup_staff_right_button_margin_left">5dip</dimen>
+    <dimen name="signup_staff_item_margin_top">3dip</dimen>
+    <dimen name="signup_staff_item_margin_bottom">3dip</dimen>
+    <!-- sign up staff -->
+
+
+    <!-- sign up enterprise finish -->
+    <dimen name="signup_enterprisefinish_button_height">45dip</dimen>
+    <dimen name="signup_enterprisefinish_button_size">19sp</dimen>
+    <dimen name="signup_enterprisefinish_button_margin_left">10dip</dimen>
+    <dimen name="signup_enterprisefinish_button_margin_right">10dip</dimen>
+    <!-- sign up enterprise finish -->
+
+
+    <!-- sign up staff finish -->
+    <dimen name="signup_stafffinish_button_height">45dip</dimen>
+    <dimen name="signup_stafffinish_button_size">19sp</dimen>
+    <dimen name="signup_stafffinish_button_margin_left">10dip</dimen>
+    <dimen name="signup_stafffinish_button_margin_right">10dip</dimen>
+    <!-- sign up staff finish -->
+
+
+    <!-- sign up free -->
+    <dimen name="signup_free_left_text_width">80dip</dimen>
+    <dimen name="signup_free_left_text_height">45dip</dimen>
+    <dimen name="signup_free_left_text_margin_left">10dip</dimen>
+    <dimen name="signup_free_left_text_size">16sp</dimen>
+    <dimen name="signup_free_right_edit_height">45dip</dimen>
+    <dimen name="signup_free_right_edit_margin_left">5dip</dimen>
+    <dimen name="signup_free_right_button_height">45dip</dimen>
+    <dimen name="signup_free_right_button_width">130dip</dimen>
+    <dimen name="signup_free_right_button_text_size">16sp</dimen>
+    <dimen name="signup_free_right_button_margin_left">5dip</dimen>
+    <dimen name="signup_free_item_margin_top">3dip</dimen>
+    <dimen name="signup_free_item_margin_bottom">3dip</dimen>
+    <!-- sign up free -->
+
+
+    <!-- sign up interest -->
+    <dimen name="signup_interest_left_text_width">80dip</dimen>
+    <dimen name="signup_interest_left_text_height">45dip</dimen>
+    <dimen name="signup_interest_left_text_margin_left">10dip</dimen>
+    <dimen name="signup_interest_left_text_size">16sp</dimen>
+    <dimen name="signup_interest_right_edit_height">45dip</dimen>
+    <dimen name="signup_interest_right_edit_margin_left">5dip</dimen>
+    <dimen name="signup_interest_right_button_height">45dip</dimen>
+    <dimen name="signup_interest_right_button_width">130dip</dimen>
+    <dimen name="signup_interest_right_button_text_size">16sp</dimen>
+    <dimen name="signup_interest_right_button_margin_left">5dip</dimen>
+    <dimen name="signup_interest_item_margin_top">3dip</dimen>
+    <dimen name="signup_interest_item_margin_bottom">3dip</dimen>
+    <!-- sign up interest -->
+
+
+    <!-- enterprise list -->
+    <dimen name="product_list_other_text_size">13sp</dimen>
+    <!-- enterprise list -->
+
+
+    <!-- search main -->
+    <dimen name="search_main_1_item_height">170dip</dimen>
+    <dimen name="search_main_23_item_height">130dip</dimen>
+    <dimen name="search_main_item_text_size">15sp</dimen>
+    <dimen name="search_main_button_text_size">16sp</dimen>
+    <dimen name="search_main_tab_button_height">40dip</dimen>
+    <dimen name="search_main_tab_button_width">50dip</dimen>
+    <dimen name="search_main_edit_height">45dip</dimen>
+    <dimen name="search_main_button_height">50dip</dimen>
+    <!-- search main -->
+
+
+    <!-- search advanced main -->
+    <dimen name="search_advanced_main_left_text_width">80dip</dimen>
+    <dimen name="search_advanced_main_left_text_height">45dip</dimen>
+    <dimen name="search_advanced_main_left_text_margin_left">10dip</dimen>
+    <dimen name="search_advanced_main_left_text_size">16sp</dimen>
+    <dimen name="search_advanced_main_right_edit_height">45dip</dimen>
+    <dimen name="search_advanced_main_right_edit_margin_left">5dip</dimen>
+    <dimen name="search_advanced_main_right_button_height">45dip</dimen>
+    <dimen name="search_advanced_main_right_button_width">130dip</dimen>
+    <dimen name="search_advanced_main_right_button_text_size">16sp</dimen>
+    <dimen name="search_advanced_main_right_button_margin_left">5dip</dimen>
+    <dimen name="search_advanced_main_item_margin_top">3dip</dimen>
+    <dimen name="search_advanced_main_item_margin_bottom">3dip</dimen>
+    <!-- search advanced main -->
+
+
+    <!-- form item -->
+    <dimen name="form_item_left_text_width">80dip</dimen>
+    <dimen name="form_item_left_text_height">45dip</dimen>
+    <dimen name="form_item_left_text_margin_left">10dip</dimen>
+    <dimen name="form_item_left_text_size">16sp</dimen>
+    <dimen name="form_item_right_edit_height">45dip</dimen>
+    <dimen name="form_item_right_edit_margin_left">5dip</dimen>
+    <dimen name="form_item_right_button_height">45dip</dimen>
+    <dimen name="form_item_right_button_width">130dip</dimen>
+    <dimen name="form_item_right_button_text_size">16sp</dimen>
+    <dimen name="form_item_right_button_margin_left">5dip</dimen>
+    <dimen name="form_item_item_margin_top">3dip</dimen>
+    <dimen name="form_item_item_margin_bottom">3dip</dimen>
+    <!-- form item -->
+    
+    <!-- friend detail -->
+    <dimen name="friend_detail_text_height">20dip</dimen>
+    <dimen name="friend_detail_text_size">14sp</dimen>
+    <dimen name="friend_detail_button_height">40dip</dimen>
+    <!-- friend detail -->
+
+	<!-- widget show photo -->
+    <dimen name="widget_photo_show_height">130dip</dimen>
+    <dimen name="widget_photo_show_width">80dip</dimen>
+    <dimen name="widget_photo_show_image_height">70dip</dimen>
+    <dimen name="widget_photo_show_title_height">30dip</dimen>
+    <dimen name="widget_photo_show_delete_height">20dip</dimen>
+	<!-- widget show photo -->
+	
+	
+	<!-- widget show select -->
+    <dimen name="widget_photo_select_height">90dip</dimen>
+    <dimen name="widget_photo_select_width">250dip</dimen>
+    <dimen name="widget_photo_select_image_height">80dip</dimen>
+    <dimen name="widget_photo_select_image_width">80dip</dimen>
+    <dimen name="widget_photo_select_title_height">40dip</dimen>
+    <dimen name="widget_photo_select_delete_height">20dip</dimen>
+	<!-- widget show select -->
+	
+	
+    <!-- friend group -->
+    <dimen name="friend_group_layout_add">40dip</dimen>
+    <dimen name="friend_group_layout_bottom_minheight">80dip</dimen>
+    <dimen name="friend_group_item_height">45dip</dimen>
+    <!-- friend group -->
+    
+    
+	<!-- dialog friend operation -->
+    <dimen name="dialog_friend_operation_button_heigth">40dip</dimen>
+    <dimen name="dialog_friend_operation_button_margin_left">20dip</dimen>
+    <dimen name="dialog_friend_operation_button_margin_right">20dip</dimen>
+    <dimen name="dialog_friend_operation_button_margin_top">5dip</dimen>
+    <dimen name="dialog_friend_operation_button_margin_bottom">5dip</dimen>
+	<!-- dialog friend operation -->
+	
+    
+	<!-- dialog friend cancel -->
+    <dimen name="dialog_friend_cancel_button_heigth">40dip</dimen>
+    <dimen name="dialog_friend_cancel_button_margin_left">20dip</dimen>
+    <dimen name="dialog_friend_cancel_button_margin_right">20dip</dimen>
+    <dimen name="dialog_friend_cancel_button_margin_top">5dip</dimen>
+    <dimen name="dialog_friend_cancel_button_margin_bottom">5dip</dimen>
+    <dimen name="more_main_line_1_button_height">50dip</dimen>
+    <!-- dialog friend cancel -->
+</resources>

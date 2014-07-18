@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/page_background" >
+
+    <RelativeLayout
+        android:id="@+id/banner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/banner_height"
+        android:layout_alignParentTop="true" >
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_btn_layout"
+        android:layout_below="@id/banner_layout"
+        android:scrollbars="none" >
+
+        <TextView
+            android:id="@+id/text_page_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffacacac"
+            android:textSize="13sp" />
+    </ScrollView>
+
+    <!-- <include
+        android:id="@id/bottom_btn_layout"
+        layout="@layout/bottom_image_text_button" /> -->
+
+</RelativeLayout>

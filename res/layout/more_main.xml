@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#f7f0e9">
+
+    <RelativeLayout
+            android:id="@+id/banner_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/banner_height"
+            android:layout_alignParentTop="true">
+    </RelativeLayout>
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="14dip"
+            android:scrollbars="none">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                <Button
+                        android:id="@+id/more_main_button_left"
+                        android:layout_width="0dip"
+                        android:layout_height="@dimen/more_main_line_1_button_height"
+                        android:layout_weight="1"
+                        android:textSize="25sp"
+                        android:textColor="#ffffffff"
+                        android:background="@drawable/red_button_selector"
+                        android:layout_marginRight="5dp"
+                        />
+
+                <Button
+                        android:id="@+id/more_main_button_right"
+                        android:layout_width="0dip"
+                        android:layout_height="@dimen/more_main_line_1_button_height"
+                        android:layout_weight="1"
+                        android:textSize="25sp"
+                        android:textColor="#ff999999"
+                        android:background="@drawable/white_gray_button_corner_rectangle_selector"
+                        android:layout_marginLeft="5dp"
+                        />
+
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设置"
+                    android:textColor="#ff979797"
+                    android:textSize="13sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    >
+
+                <RelativeLayout
+                        android:id="@+id/more_main_layout_item_notification"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:background="@drawable/item_top">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textSize="16sp"
+                            android:textColor="#ff1b1b1b"
+                            android:text="显示消息通知"
+                            />
+
+                    <CheckBox
+                            android:id="@+id/more_main_check_notification"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:button="@drawable/transparent_rectangle"
+                            android:background="@drawable/check_box_red_selector"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/more_main_layout_item_account_status"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:background="@drawable/item_middle">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textSize="16sp"
+                            android:textColor="#ff1b1b1b"
+                            android:text="账户注销"
+                            />
+
+                    <TextView
+                            android:id="@+id/more_main_layout_text_account_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:textSize="16sp"
+                            android:textColor="#ff9c9c9c"
+                            android:text="已登录"
+                            />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/more_main_layout_item_cache"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:background="@drawable/item_bottom">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textSize="16sp"
+                            android:textColor="#ff1b1b1b"
+                            android:text="清除缓存"
+                            />
+
+                    <TextView
+                            android:id="@+id/more_main_layout_text_cache"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:textSize="16sp"
+                            android:textColor="#ff9c9c9c"
+                            android:text="0M"
+                            />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="其他"
+                    android:textColor="#ff979797"
+                    android:textSize="13sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    >
+
+                <RelativeLayout
+                        android:id="@+id/more_main_layout_item_share"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:background="@drawable/item_top">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textSize="16sp"
+                            android:textColor="#ff1b1b1b"
+                            android:text="分享"
+                            />
+
+                    <View
+                            android:layout_width="10dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/arrows_right"
+                            />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/more_main_layout_item_feedback"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:background="@drawable/item_middle">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textSize="16sp"
+                            android:textColor="#ff1b1b1b"
+                            android:text="意见反馈"
+                            />
+
+                    <View
+                            android:layout_width="10dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/arrows_right"
+                            />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/more_main_layout_update_version"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:background="@drawable/item_middle">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textSize="16sp"
+                            android:textColor="#ff1b1b1b"
+                            android:text="更新版本"
+                            />
+
+                    <View
+                            android:layout_width="10dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/arrows_right"
+                            />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/more_main_layout_item_about_us"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:background="@drawable/item_bottom">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textSize="16sp"
+                            android:textColor="#ff1b1b1b"
+                            android:text="关于我们"
+                            />
+
+                    <View
+                            android:layout_width="10dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/arrows_right"
+                            />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

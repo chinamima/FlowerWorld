@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/friend_group_item_height"
+    android:background="#00000000" >
+
+    <TextView
+        android:id="@+id/friend_group_item_text_xing"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dip"
+        android:gravity="center_vertical"
+        android:text="@string/form_item_must"
+        android:textColor="#ffff0000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/friend_group_item_text_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dip"
+        android:layout_toRightOf="@+id/friend_group_item_text_xing"
+        android:gravity="center_vertical"
+        android:text="@string/common_word"
+        android:textColor="#ff000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/friend_group_item_text_group_num"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dip"
+        android:layout_toRightOf="@+id/friend_group_item_text_group_name"
+        android:gravity="center_vertical"
+        android:text="@string/common_word"
+        android:textColor="#ff9f9f9f"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="10dip"
+        android:layout_height="20dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dip"
+        android:background="@drawable/arrows_right" />
+
+</RelativeLayout>

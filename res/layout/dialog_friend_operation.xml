@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_corner_rectangle"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <Button
+        android:id="@+id/dialog_friend_operation_button_goback"
+        android:layout_width="50dip"
+        android:layout_height="30dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:background="#00000000"
+        android:gravity="center|top"
+        android:text="@string/go_back"
+        android:textColor="#ff999999"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="3dip"
+        android:background="#ffd6d6d6" />
+
+    <TextView
+        android:id="@+id/dialog_friend_operation_text_delete_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:gravity="center"
+        android:text="@string/dialog_friend_operation_delete_tip"
+        android:textColor="#ffb3b3b3"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/dialog_friend_operation_button_all_transfer"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dialog_friend_operation_button_heigth"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dialog_friend_operation_button_margin_bottom"
+        android:layout_marginLeft="@dimen/dialog_friend_operation_button_margin_left"
+        android:layout_marginRight="@dimen/dialog_friend_operation_button_margin_right"
+        android:layout_marginTop="@dimen/dialog_friend_operation_button_margin_top"
+        android:background="@drawable/blue_button_selector"
+        android:text="@string/dialog_friend_operation_all_transfer"
+        android:textColor="#ff7a7a7a"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/dialog_friend_operation_button_rename"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dialog_friend_operation_button_heigth"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dialog_friend_operation_button_margin_bottom"
+        android:layout_marginLeft="@dimen/dialog_friend_operation_button_margin_left"
+        android:layout_marginRight="@dimen/dialog_friend_operation_button_margin_right"
+        android:layout_marginTop="@dimen/dialog_friend_operation_button_margin_top"
+        android:background="@drawable/blue_button_selector"
+        android:text="@string/dialog_friend_operation_rename"
+        android:textColor="#ff7a7a7a"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/dialog_friend_operation_button_delete"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dialog_friend_operation_button_heigth"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="@dimen/dialog_friend_operation_button_margin_left"
+        android:layout_marginRight="@dimen/dialog_friend_operation_button_margin_right"
+        android:layout_marginTop="@dimen/dialog_friend_operation_button_margin_top"
+        android:background="@drawable/blue_button_selector"
+        android:text="@string/dialog_friend_operation_delete"
+        android:textColor="#ff7a7a7a"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff" >
+
+    <RelativeLayout
+        android:id="@+id/banner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/banner_height" >
+    </RelativeLayout>
+
+    <!--
+         <com.viewpagerindicator.TabPageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner_layout" />
+    -->
+
+    <LinearLayout
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_below="@id/banner_layout"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/home_page_button_home"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_page_tab_indicator"
+            android:gravity="center"
+            android:text="@string/home_page_home_page"
+            android:textColor="@color/home_page_tab_text_selector"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/home_page_button_information"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_page_tab_indicator"
+            android:gravity="center"
+            android:text="@string/home_page_information"
+            android:textColor="@color/home_page_tab_text_selector"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/home_page_button_product"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_page_tab_indicator"
+            android:gravity="center"
+            android:text="@string/home_page_product"
+            android:textColor="@color/home_page_tab_text_selector"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/home_page_button_enterprise"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_page_tab_indicator"
+            android:gravity="center"
+            android:text="@string/home_page_enterprise"
+            android:textColor="@color/home_page_tab_text_selector"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/home_page_button_supply_demand"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_page_tab_indicator"
+            android:gravity="center"
+            android:text="@string/home_page_supply_demand"
+            android:textColor="@color/home_page_tab_text_selector"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/home_page_button_bbs"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_page_tab_indicator"
+            android:gravity="center"
+            android:text="@string/home_page_bbs"
+            android:textColor="@color/home_page_tab_text_selector"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/home_page_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_below="@id/indicator"
+        android:src="#ffcccccc" />
+
+    <com.flowerworld.app.ui.widget.GjjViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_btn_layout"
+        android:layout_below="@id/home_page_divider" />
+
+    <include
+        android:id="@id/bottom_btn_layout"
+        layout="@layout/bottom_image_text_button" />
+
+</RelativeLayout>

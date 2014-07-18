@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/form_item_item_margin_bottom"
+        android:layout_marginTop="@dimen/form_item_item_margin_top" >
+
+        <TextView
+            android:id="@+id/form_item_text_must"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/signup_newenterprise_left_text_height"
+            android:gravity="center_vertical"
+            android:text="@string/form_item_must"
+            android:textColor="#ffff0000"
+            android:textSize="@dimen/signup_newenterprise_left_text_size" />
+
+        <TextView
+            android:id="@+id/form_item_text_select"
+            android:layout_width="@dimen/form_item_left_text_width"
+            android:layout_height="@dimen/form_item_left_text_height"
+            android:layout_marginLeft="@dimen/form_item_left_text_margin_left"
+            android:gravity="center_vertical"
+            android:text="@string/form_item_select"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/form_item_left_text_size" />
+
+        <Button
+            android:id="@+id/form_item_button_select"
+            android:layout_width="@dimen/form_item_right_button_width"
+            android:layout_height="@dimen/form_item_right_button_height"
+            android:layout_marginLeft="@dimen/form_item_right_button_margin_left"
+            android:layout_toRightOf="@id/form_item_text_select"
+            android:background="@drawable/blue_button_selector"
+            android:text="@string/form_item_select"
+            android:textColor="#ff777777"
+            android:textSize="@dimen/form_item_right_button_text_size" />
+
+        <TextView
+            android:id="@+id/form_item_text_tips"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/form_item_text_select"
+            android:layout_below="@id/form_item_text_select"
+            android:text="@string/common_word"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

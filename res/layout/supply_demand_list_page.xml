@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/supply_demand_list_total"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="5dip"
+        android:gravity="center|left"
+        android:text="@string/common_word"
+        android:textColor="#ff000000"
+        android:textSize="13sp" />
+
+    <Button
+        android:layout_alignParentRight="true"
+        android:id="@+id/supply_demand_list_publish"
+        android:layout_width="90dip"
+        android:layout_height="35dip"
+        android:gravity="center"
+        android:background="@drawable/blue_button_selector"
+        android:text="@string/supply_demand_list_publish"
+        android:textColor="#ff999999"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/supply_demand_list_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:layout_below="@id/supply_demand_list_total"
+        android:src="#ffcccccc" />
+
+    <ListView
+        android:id="@+id/supply_demand_list_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/supply_demand_list_divider"
+        android:divider="#ffaaaaaa"
+        android:dividerHeight="2px" >
+    </ListView>
+
+</RelativeLayout>

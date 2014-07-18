@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/banner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/banner_height" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/friend_group_text_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner_layout"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="5dip"
+        android:text="@string/friend_group_tip"
+        android:textColor="#ff000000"
+        android:textSize="14sp" />
+
+    <ScrollView
+        android:id="@+id/friend_group_scroll_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/friend_group_text_tip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="90dip"
+        android:background="@drawable/stroke_nopadding_corner_rectangle"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/friend_group_layout_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/friend_group_layout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/friend_group_scroll_group"
+        android:layout_marginTop="-80dip"
+        android:minHeight="80dip" >
+
+        <TextView
+            android:id="@+id/friend_group_text_group_max"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:text="@string/friend_group_max"
+            android:textColor="#ffb3b3b3"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/friend_group_layout_add"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/friend_group_text_group_max"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:minHeight="@dimen/friend_group_layout_add" >
+
+            <Button
+                android:id="@+id/friend_group_button_add"
+                android:layout_width="80dip"
+                android:layout_height="@dimen/friend_group_layout_add"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/blue_button_selector"
+                android:text="@string/friend_group_add"
+                android:textColor="#ff868686"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/friend_group_edit_add"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/friend_group_layout_add"
+                android:layout_toLeftOf="@id/friend_group_button_add"
+                android:background="@drawable/input_corner_rectangle"
+                android:hint="@string/friend_group_new_hint"
+                android:textColor="#ff1a1a1a"
+                android:textColorHint="#ffb3b3b3"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

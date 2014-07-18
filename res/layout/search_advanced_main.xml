@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/page_background" >
+
+    <RelativeLayout
+        android:id="@+id/banner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/banner_height"
+        android:layout_alignParentTop="true" >
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner_layout"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/search_advanced_main_item_margin_bottom"
+                android:layout_marginTop="@dimen/search_advanced_main_item_margin_top" >
+
+                <TextView
+                    android:id="@+id/search_advanced_main_text_type"
+                    android:layout_width="@dimen/search_advanced_main_left_text_width"
+                    android:layout_height="@dimen/search_advanced_main_left_text_height"
+                    android:layout_marginLeft="@dimen/search_advanced_main_left_text_margin_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/search_advanced_main_type"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/search_advanced_main_left_text_size" />
+
+                <Button
+                    android:id="@+id/search_advanced_main_button_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/search_advanced_main_right_button_height"
+                    android:layout_marginLeft="@dimen/search_advanced_main_right_button_margin_left"
+                    android:layout_toRightOf="@id/search_advanced_main_text_type"
+                    android:background="@drawable/blue_button_selector"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:text="@string/search_advanced_main_select"
+                    android:textColor="#ff777777"
+                    android:textSize="@dimen/search_advanced_main_right_button_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/search_advanced_main_item_margin_bottom"
+                android:layout_marginTop="@dimen/search_advanced_main_item_margin_top" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/search_advanced_main_left_text_height"
+                    android:gravity="center_vertical"
+                    android:text="@string/search_advanced_main_must"
+                    android:textColor="#ffff0000"
+                    android:textSize="@dimen/search_advanced_main_left_text_size" />
+
+                <TextView
+                    android:id="@+id/search_advanced_main_text_product_name"
+                    android:layout_width="@dimen/search_advanced_main_left_text_width"
+                    android:layout_height="@dimen/search_advanced_main_left_text_height"
+                    android:layout_marginLeft="@dimen/search_advanced_main_left_text_margin_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/search_advanced_main_product_name"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/search_advanced_main_left_text_size" />
+
+                <EditText
+                    android:id="@+id/search_advanced_main_edit_product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/search_advanced_main_right_edit_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/search_advanced_main_right_edit_margin_left"
+                    android:layout_toRightOf="@id/search_advanced_main_text_product_name"
+                    android:background="@drawable/input_corner_rectangle"
+                    android:hint=""
+                    android:maxLength="15" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/search_advanced_main_layout_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/search_advanced_main_item_margin_bottom"
+                android:layout_marginTop="@dimen/search_advanced_main_item_margin_top" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/search_advanced_main_left_text_height"
+                    android:gravity="center_vertical"
+                    android:text="@string/search_advanced_main_must"
+                    android:textColor="#ffff0000"
+                    android:textSize="@dimen/search_advanced_main_left_text_size" />
+
+                <TextView
+                    android:id="@+id/search_advanced_main_text_location"
+                    android:layout_width="@dimen/search_advanced_main_left_text_width"
+                    android:layout_height="@dimen/search_advanced_main_left_text_height"
+                    android:layout_marginLeft="@dimen/search_advanced_main_left_text_margin_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/search_advanced_main_location"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/search_advanced_main_left_text_size" />
+
+                <Button
+                    android:id="@+id/search_advanced_main_button_location"
+                    android:layout_width="@dimen/search_advanced_main_right_button_width"
+                    android:layout_height="@dimen/search_advanced_main_right_button_height"
+                    android:layout_marginLeft="@dimen/search_advanced_main_right_button_margin_left"
+                    android:layout_toRightOf="@id/search_advanced_main_text_location"
+                    android:background="@drawable/blue_button_selector"
+                    android:text="@string/search_advanced_main_select"
+                    android:textColor="#ff777777"
+                    android:textSize="@dimen/search_advanced_main_right_button_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/search_advanced_main_item_margin_bottom"
+                android:layout_marginTop="@dimen/search_advanced_main_item_margin_top" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/search_advanced_main_left_text_height"
+                    android:gravity="center_vertical"
+                    android:text="@string/search_advanced_main_must"
+                    android:textColor="#ffff0000"
+                    android:textSize="@dimen/search_advanced_main_left_text_size" />
+
+                <TextView
+                    android:id="@+id/search_advanced_main_text_combine"
+                    android:layout_width="@dimen/search_advanced_main_left_text_width"
+                    android:layout_height="@dimen/search_advanced_main_left_text_height"
+                    android:layout_marginLeft="@dimen/search_advanced_main_left_text_margin_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/search_advanced_main_combine"
+                    android:textColor="#ff000000"
+                    android:textSize="@dimen/search_advanced_main_left_text_size" />
+
+                <com.flowerworld.app.ui.widget.SingleSelectButton
+                    android:id="@+id/search_advanced_main_button_combine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/search_advanced_main_right_edit_margin_left"
+                    android:layout_toRightOf="@id/search_advanced_main_text_combine"
+                    android:background="#00000000" >
+                </com.flowerworld.app.ui.widget.SingleSelectButton>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/search_advanced_main_button_combine"
+                    android:layout_below="@id/search_advanced_main_button_combine"
+                    android:text="@string/search_advanced_main_tips"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/search_advanced_main_button_search"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/red_button_selector"
+                android:gravity="center"
+                android:text="@string/search_advanced_main_search"
+                android:textColor="#ffffffff"
+                android:textSize="19sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/page_background" >
+
+    <RelativeLayout
+        android:id="@+id/banner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/banner_height"
+        android:layout_alignParentTop="true" >
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_btn_layout"
+        android:layout_below="@id/banner_layout"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/search_main_1_item_height"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/sign_up_item_corner_rectangle"
+                android:orientation="vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:gravity="bottom|left"
+                    android:text="@string/search_main_quick_search"
+                    android:textColor="#ff111111"
+                    android:textSize="@dimen/search_main_item_text_size" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/search_main_button_tab_product"
+                        android:layout_width="@dimen/search_main_tab_button_width"
+                        android:layout_height="@dimen/search_main_tab_button_height"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/red_tab_button_selector"
+                        android:gravity="center"
+                        android:text="@string/search_main_product"
+                        android:textColor="@color/search_main_tab_selector"
+                        android:textSize="@dimen/search_main_button_text_size" />
+
+                    <Button
+                        android:id="@+id/search_main_button_tab_enterprise"
+                        android:layout_width="@dimen/search_main_tab_button_width"
+                        android:layout_height="@dimen/search_main_tab_button_height"
+                        android:layout_marginLeft="20dip"
+                        android:background="@drawable/red_tab_button_selector"
+                        android:gravity="center"
+                        android:text="@string/search_main_enterprise"
+                        android:textColor="@color/search_main_tab_selector"
+                        android:textSize="@dimen/search_main_button_text_size" />
+
+                    <Button
+                        android:id="@+id/search_main_button_tab_demand"
+                        android:layout_width="@dimen/search_main_tab_button_width"
+                        android:layout_height="@dimen/search_main_tab_button_height"
+                        android:layout_marginLeft="20dip"
+                        android:background="@drawable/red_tab_button_selector"
+                        android:gravity="center"
+                        android:text="@string/search_main_demand"
+                        android:textColor="@color/search_main_tab_selector"
+                        android:textSize="@dimen/search_main_button_text_size" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/search_main_edit_height" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/search_main_edit_height"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/search_main_button_search"
+                        android:background="@drawable/input_corner_red_rectangle" >
+
+                        <ImageView
+                            android:id="@+id/search_main_image_search_icon"
+                            android:layout_width="30dip"
+                            android:layout_height="30dip"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/bottom_btn_search_normal" />
+
+                        <EditText
+                            android:id="@+id/search_main_edit"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/search_main_edit_height"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="2dip"
+                            android:layout_toRightOf="@id/search_main_image_search_icon"
+                            android:background="#00000000"
+                            android:gravity="center_vertical"
+                            android:hint="@string/please_input"
+                            android:inputType="text"
+                            android:textColor="#ff222222"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/search_main_button_search"
+                        android:layout_width="65dip"
+                        android:layout_height="@dimen/search_main_edit_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="3dip"
+                        android:background="@drawable/blue_button_selector"
+                        android:gravity="center"
+                        android:text="@string/search_main_search"
+                        android:textColor="#ff999999"
+                        android:textSize="@dimen/search_main_button_text_size" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/search_main_23_item_height"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/sign_up_item_corner_rectangle"
+                android:orientation="vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:gravity="bottom|left"
+                    android:text="@string/search_main_advanced_search"
+                    android:textColor="#ff111111"
+                    android:textSize="@dimen/search_main_item_text_size" />
+
+                <Button
+                    android:id="@+id/search_main_button_select_product_type_search"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/search_main_button_height"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/blue_button_selector"
+                    android:gravity="center"
+                    android:text="@string/search_main_select_product_type"
+                    android:textColor="#ff999999"
+                    android:textSize="@dimen/search_main_button_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/search_main_23_item_height"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/sign_up_item_corner_rectangle"
+                android:orientation="vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:gravity="bottom|left"
+                        android:text="@string/search_main_publish_enquiry"
+                        android:textColor="#ff111111"
+                        android:textSize="@dimen/search_main_item_text_size" />
+
+                    <TextView
+                        android:id="@+id/search_main_text_my_enquiry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:layout_alignParentRight="true"
+                        android:gravity="bottom|right"
+                        android:text="@string/search_main_my_enquiry"
+                        android:textColor="#fff15f5f"
+                        android:textSize="@dimen/search_main_item_text_size" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/search_main_button_select_product_type_enqueiry"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/search_main_button_height"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/blue_button_selector"
+                    android:gravity="center"
+                    android:text="@string/search_main_select_product_type"
+                    android:textColor="#ff999999"
+                    android:textSize="@dimen/search_main_button_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+   <!--  <include
+        android:id="@id/bottom_btn_layout"
+        layout="@layout/bottom_image_text_button" /> -->
+</RelativeLayout>

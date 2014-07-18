@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal" >
+
+    <com.flowerworld.app.ui.widget.ImageTextButton
+        android:id="@+id/bottom_btn_browse"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bottom_button_selector"
+        android:text="@string/home_page_browse" />
+
+    <com.flowerworld.app.ui.widget.ImageTextButton
+        android:id="@+id/bottom_btn_search"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bottom_button_selector"
+        android:text="@string/home_page_search" />
+
+    <com.flowerworld.app.ui.widget.ImageTextButton
+        android:id="@+id/bottom_btn_message"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bottom_button_selector"
+        android:text="@string/home_page_information" />
+
+    <com.flowerworld.app.ui.widget.ImageTextButton
+        android:id="@+id/bottom_btn_friend"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bottom_button_selector"
+        android:text="@string/home_page_friend" />
+
+    <com.flowerworld.app.ui.widget.ImageTextButton
+        android:id="@+id/bottom_btn_more"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bottom_button_selector"
+        android:text="@string/home_page_more" />
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/page_background" >
+
+    <RelativeLayout
+        android:id="@+id/banner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/banner_height"
+        android:layout_alignParentTop="true" >
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_btn_layout"
+        android:layout_below="@id/banner_layout"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:gravity="center"
+                android:text="@string/signup_enterprisefinish_thanks"
+                android:textColor="#ffff0000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:text="@string/signup_enterprisefinish_welcome"
+                android:textColor="#ff000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/sign_up_enterprise_finish_button_member"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/signup_enterprisefinish_button_height"
+                android:layout_marginLeft="@dimen/signup_enterprisefinish_button_margin_left"
+                android:layout_marginRight="@dimen/signup_enterprisefinish_button_margin_right"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/blue_button_selector"
+                android:gravity="center"
+                android:text="@string/signup_enterprisefinish_button_1"
+                android:textColor="#ff777777"
+                android:textSize="@dimen/signup_enterprisefinish_button_size" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:gravity="center"
+                android:text="@string/signup_enterprisefinish_remarks"
+                android:textColor="#ff000000"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/sign_up_enterprise_finish_button_information"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/signup_enterprisefinish_button_height"
+                android:layout_marginLeft="@dimen/signup_enterprisefinish_button_margin_left"
+                android:layout_marginRight="@dimen/signup_enterprisefinish_button_margin_right"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/red_button_selector"
+                android:gravity="center"
+                android:text="@string/signup_enterprisefinish_button_2"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/signup_enterprisefinish_button_size" />
+
+            <Button
+                android:id="@+id/sign_up_enterprise_finish_button_browser"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/signup_enterprisefinish_button_height"
+                android:layout_marginLeft="@dimen/signup_enterprisefinish_button_margin_left"
+                android:layout_marginRight="@dimen/signup_enterprisefinish_button_margin_right"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/red_button_selector"
+                android:gravity="center"
+                android:text="@string/signup_enterprisefinish_button_3"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/signup_enterprisefinish_button_size" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- <include
+        android:id="@id/bottom_btn_layout"
+        layout="@layout/bottom_image_text_button" /> -->
+
+</RelativeLayout>

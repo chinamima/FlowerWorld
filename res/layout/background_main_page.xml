@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <LinearLayout
+            android:id="@+id/background_main_layout_bottom_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            >
+        <Button
+                android:id="@+id/background_main_button_exit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:text="@string/exit"
+                android:textColor="#fffafafa"
+                android:textSize="14sp"
+                android:paddingTop="6dp"
+                android:drawableTop="@drawable/background_main_bottom_menu_exit"
+                android:background="@drawable/background_main_bottom_menu_selector"
+                />
+        <Button
+                android:id="@+id/background_main_button_member_center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:text="@string/background_main_bottom_menu_member_center"
+                android:textColor="#fffafafa"
+                android:textSize="14sp"
+                android:background="@drawable/background_main_bottom_menu_selector"
+                />
+        <Button
+                android:id="@+id/background_main_button_template"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:text="@string/background_main_bottom_menu_template"
+                android:textColor="#fffafafa"
+                android:textSize="14sp"
+                android:background="@drawable/background_main_bottom_menu_selector"
+                />
+        <Button
+                android:id="@+id/background_main_button_product"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:text="@string/background_main_bottom_menu_product"
+                android:textColor="#fffafafa"
+                android:textSize="14sp"
+                android:background="@drawable/background_main_bottom_menu_selector"
+                />
+        <Button
+                android:id="@+id/background_main_button_wechat"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:text="@string/background_main_bottom_menu_wechat"
+                android:textColor="#fffafafa"
+                android:textSize="14sp"
+                android:background="@drawable/background_main_bottom_menu_selector"
+                />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/background_main_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/background_main_layout_bottom_menu"
+            >
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip" >
+
+    <TextView
+        android:id="@+id/list_item_left"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dip"
+        android:gravity="center|left"
+        android:text="@string/signup_searchenterprise_search_result_1"
+        android:textColor="#ff444444"
+        android:textSize="@dimen/select_left_text_size" />
+
+    <TextView
+        android:id="@+id/list_item_right"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dip"
+        android:gravity="center|right"
+        android:text="@string/signup_searchenterprise_search_result_1"
+        android:textColor="#ff444444"
+        android:textSize="15sp" />
+
+</RelativeLayout>

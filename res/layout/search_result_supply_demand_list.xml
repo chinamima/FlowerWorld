@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background" >
+
+    <RelativeLayout
+        android:id="@+id/banner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/banner_height"
+        android:layout_alignParentTop="true" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_btn_layout"
+        android:layout_below="@id/banner_layout"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/search_result_text_fail"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_marginLeft="5dip"
+            android:gravity="center|left"
+            android:text="@string/search_result_fail"
+            android:textColor="#fff15f5f"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/search_result_text_total"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_marginLeft="5dip"
+            android:gravity="center|left"
+            android:text="@string/common_word"
+            android:textColor="#ff000000"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/search_result_supply_demand_list_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/search_result_text_total"
+            android:src="#ffcccccc" />
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/search_result_supply_demand_list_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/search_result_supply_demand_list_divider"
+            android:divider="#ffaaaaaa"
+            android:dividerHeight="1px"
+            ptr:ptrHeaderBackground="@android:color/white"
+            ptr:ptrHeaderTextColor="@android:color/black"
+            ptr:ptrMode="pullUpFromBottom" />
+    </RelativeLayout>
+
+    <!-- <include
+        android:id="@id/bottom_btn_layout"
+        layout="@layout/bottom_image_text_button" /> -->
+
+</RelativeLayout>

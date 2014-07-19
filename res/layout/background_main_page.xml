@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent">
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#ffffffff"
+        >
 
     <LinearLayout
             android:id="@+id/background_main_layout_bottom_menu"
@@ -11,6 +13,7 @@
             android:orientation="horizontal"
             android:layout_alignParentBottom="true"
             >
+
         <Button
                 android:id="@+id/background_main_button_exit"
                 android:layout_width="0dp"
@@ -23,6 +26,7 @@
                 android:drawableTop="@drawable/background_main_bottom_menu_exit"
                 android:background="@drawable/background_main_bottom_menu_selector"
                 />
+
         <Button
                 android:id="@+id/background_main_button_member_center"
                 android:layout_width="0dp"
@@ -33,6 +37,7 @@
                 android:textSize="14sp"
                 android:background="@drawable/background_main_bottom_menu_selector"
                 />
+
         <Button
                 android:id="@+id/background_main_button_template"
                 android:layout_width="0dp"
@@ -43,6 +48,7 @@
                 android:textSize="14sp"
                 android:background="@drawable/background_main_bottom_menu_selector"
                 />
+
         <Button
                 android:id="@+id/background_main_button_product"
                 android:layout_width="0dp"
@@ -53,6 +59,7 @@
                 android:textSize="14sp"
                 android:background="@drawable/background_main_bottom_menu_selector"
                 />
+
         <Button
                 android:id="@+id/background_main_button_wechat"
                 android:layout_width="0dp"
@@ -70,8 +77,18 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_above="@id/background_main_layout_bottom_menu"
+            android:visibility="gone"
             >
 
     </android.support.v4.view.ViewPager>
+
+    <FrameLayout
+            android:id="@+id/background_main_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/background_main_layout_bottom_menu"
+            >
+
+    </FrameLayout>
 
 </RelativeLayout>

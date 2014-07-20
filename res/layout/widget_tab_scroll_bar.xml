@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/widget_tab_scroll_bar_layout_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_result_type_bar">
+
+    <Button
+            android:id="@+id/widget_tab_scroll_bar_button_arrow_left"
+            android:layout_width="10dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/arrows_button_left"/>
+
+    <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/widget_tab_scroll_bar_button_arrow_right"
+            android:layout_toRightOf="@+id/widget_tab_scroll_bar_button_arrow_left"
+            android:scrollbars="none">
+
+        <LinearLayout
+                android:id="@+id/widget_tab_scroll_bar_layout_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:padding="1dip">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+            android:id="@+id/widget_tab_scroll_bar_button_arrow_right"
+            android:layout_width="10dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/arrows_button_right"/>
+</RelativeLayout>

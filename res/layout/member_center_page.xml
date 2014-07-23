@@ -6,25 +6,11 @@
               android:layout_height="match_parent"
         >
 
-    <LinearLayout
+    <com.flowerworld.app.ui.widget.TabScrollBar
+            android:id="@+id/member_center_scroll"
             android:layout_width="fill_parent"
             android:layout_height="50dp"
-            android:orientation="horizontal">
-
-        <Button
-                android:id="@+id/member_center_button_welcome"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:text="欢迎页面"
-                />
-
-        <Button
-                android:id="@+id/member_center_button_information"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:text="会员资料"
-                />
-    </LinearLayout>
+            />
 
     <FrameLayout
             android:id="@+id/member_center_frame"

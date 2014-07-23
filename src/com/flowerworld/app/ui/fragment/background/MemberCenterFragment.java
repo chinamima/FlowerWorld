@@ -9,11 +9,12 @@ import android.view.ViewGroup;
 import com.flowerworld.app.R;
 import com.flowerworld.app.ui.base.BaseFragment;
 import com.flowerworld.app.ui.fragment.TestFragment;
+import com.flowerworld.app.ui.widget.TabScrollBar;
 
 /**
  * Created by guojj4 on 14/07/19.
  */
-public class MemberCenterFragment extends BaseFragment implements View.OnClickListener {
+public class MemberCenterFragment extends BaseFragment implements View.OnClickListener, TabScrollBar.ITabButtonClickListener {
 
     private MemberCenterFragment() {
     }
@@ -24,6 +25,7 @@ public class MemberCenterFragment extends BaseFragment implements View.OnClickLi
     }
 
     private Fragment[] mFragments = new Fragment[2];
+    private TabScrollBar mScroll = null;
 
     @Override
     protected View createView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -35,13 +37,27 @@ public class MemberCenterFragment extends BaseFragment implements View.OnClickLi
         mFragments[0] = TestFragment.newInstance("欢迎页面");
         mFragments[1] = TestFragment.newInstance("个人资料");
 
-        findViewById(R.id.member_center_button_welcome).setOnClickListener(this);
-        findViewById(R.id.member_center_button_information).setOnClickListener(this);
+//        findViewById(R.id.member_center_button_welcome).setOnClickListener(this);
+//        findViewById(R.id.member_center_button_information).setOnClickListener(this);
+        mScroll = (TabScrollBar) findViewById(R.id.member_center_scroll);
+        mScroll.setTabButtonListener(this);
     }
 
     @Override
     protected void initData() {
-
+        mScroll.addButton("欢迎页面", null);
+        mScroll.addButton("个人资料", null);
+        mScroll.addButton("个人资料", null);
+        mScroll.addButton("个人资料", null);
+        mScroll.addButton("个人资料", null);
+        mScroll.addButton("个人资料", null);
+        mScroll.addButton("个人资料", null);
+        mScroll.addButton("个人资料", null);
+        mScroll.addButton("个人资料", null);
+        mScroll.addButton("个人资料", null);
+        mScroll.addButton("个人资料", null);
+        mScroll.addButton("个人资料", null);
+        saveData(true);
     }
 
     @Override
@@ -59,17 +75,22 @@ public class MemberCenterFragment extends BaseFragment implements View.OnClickLi
     public void onClick(View view) {
         int id = view.getId();
 
-        int index = 0;
-        switch (id) {
-        case R.id.member_center_button_welcome:
-            index = 0;
-            break;
+//        int index = 0;
+//        switch (id) {
+//        case R.id.member_center_button_welcome:
+//            index = 0;
+//            break;
+//
+//        case R.id.member_center_button_information:
+//            index = 1;
+//            break;
+//        }
+//
+//        switchFragment(index);
+    }
 
-        case R.id.member_center_button_information:
-            index = 1;
-            break;
-        }
-
-        switchFragment(index);
+    @Override
+    public void onClick(View view, int position, Object data) {
+        switchFragment(position);
     }
 }

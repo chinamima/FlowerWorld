@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.HorizontalScrollView;
@@ -17,7 +18,7 @@ import java.util.List;
 /**
  * Created by guojj4 on 14/07/20.
  */
-public class TabScrollBar extends RelativeLayout implements View.OnClickListener {
+public class TabScrollBar extends RelativeLayout implements View.OnClickListener, View.OnTouchListener {
 
     private Button mBtnLeftArrow = null;
     private Button mBtnRightArrow = null;
@@ -34,6 +35,26 @@ public class TabScrollBar extends RelativeLayout implements View.OnClickListener
 
     //
     private static final int STEP = 5;
+
+    @Override
+    public boolean onTouch(View v, MotionEvent event) {
+        if (MotionEvent.ACTION_MOVE != event.getAction()) {
+            return true;
+        }
+
+        switch (v.getId()) {
+        case R.id.widget_tab_scroll_bar_button_arrow_left:
+            mScroll.scrollBy(-STEP, 0);
+//            mLinearTab.scrollBy(-STEP, 0);
+            break;
+
+        case R.id.widget_tab_scroll_bar_button_arrow_right:
+            mScroll.scrollBy(STEP, 0);
+//            mLinearTab.scrollBy(STEP, 0);
+            break;
+        }
+        return true;
+    }
 
 
     public interface ITabButtonClickListener {
@@ -70,22 +91,24 @@ public class TabScrollBar extends RelativeLayout implements View.OnClickListener
         mLinearTab = (LinearLayout) findViewById(R.id.widget_tab_scroll_bar_layout_tab);
         mScroll = (HorizontalScrollView) findViewById(R.id.widget_tab_scroll_bar_scroll);
 
-        mBtnLeftArrow.setOnClickListener(this);
-        mBtnRightArrow.setOnClickListener(this);
+//        mBtnLeftArrow.setOnClickListener(this);
+//        mBtnRightArrow.setOnClickListener(this);
+        mBtnLeftArrow.setOnTouchListener(this);
+        mBtnRightArrow.setOnTouchListener(this);
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-        case R.id.widget_tab_scroll_bar_button_arrow_left:
-            mScroll.scrollBy(-STEP, 0);
-//            mLinearTab.scrollBy(-STEP, 0);
-            break;
-
-        case R.id.widget_tab_scroll_bar_button_arrow_right:
-            mScroll.scrollBy(STEP, 0);
-//            mLinearTab.scrollBy(STEP, 0);
-            break;
+//        case R.id.widget_tab_scroll_bar_button_arrow_left:
+//            mScroll.scrollBy(-STEP, 0);
+////            mLinearTab.scrollBy(-STEP, 0);
+//            break;
+//
+//        case R.id.widget_tab_scroll_bar_button_arrow_right:
+//            mScroll.scrollBy(STEP, 0);
+////            mLinearTab.scrollBy(STEP, 0);
+//            break;
 
         default:
             if (null == mLastSelectedButton || view.hashCode() == mLastSelectedButton.hashCode()) {

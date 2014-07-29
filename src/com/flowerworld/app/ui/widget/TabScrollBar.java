@@ -3,6 +3,7 @@ package com.flowerworld.app.ui.widget;
 import android.content.Context;
 import android.graphics.Color;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -20,6 +21,7 @@ import java.util.List;
  */
 public class TabScrollBar extends RelativeLayout implements View.OnClickListener, View.OnTouchListener {
 
+    private static final String TAG = TabScrollBar.class.getSimpleName();
     private Button mBtnLeftArrow = null;
     private Button mBtnRightArrow = null;
     private LinearLayout mLinearTab = null;
@@ -38,18 +40,19 @@ public class TabScrollBar extends RelativeLayout implements View.OnClickListener
 
     @Override
     public boolean onTouch(View v, MotionEvent event) {
+        Log.d(TAG, "================MotionEvent: " + event.getAction());
         if (MotionEvent.ACTION_MOVE != event.getAction()) {
             return true;
         }
 
         switch (v.getId()) {
         case R.id.widget_tab_scroll_bar_button_arrow_left:
-            mScroll.scrollBy(-STEP, 0);
+            mScroll.scrollBy(STEP, 0);
 //            mLinearTab.scrollBy(-STEP, 0);
             break;
 
         case R.id.widget_tab_scroll_bar_button_arrow_right:
-            mScroll.scrollBy(STEP, 0);
+            mScroll.scrollBy(-STEP, 0);
 //            mLinearTab.scrollBy(STEP, 0);
             break;
         }

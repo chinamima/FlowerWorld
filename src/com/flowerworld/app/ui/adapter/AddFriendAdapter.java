@@ -131,4 +131,5 @@ public class AddFriendAdapter extends BaseAdapter implements OnClickListener {
 
         return name;
     }
+
 }

@@ -26,3 +26,7 @@ proguard/
 .idea/
 .settings/
 *.bak
+*iml
+*.md
+proguard-project.txt
+project.properties

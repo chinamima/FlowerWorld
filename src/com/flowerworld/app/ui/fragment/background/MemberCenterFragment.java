@@ -34,7 +34,7 @@ public class MemberCenterFragment extends BaseFragment implements View.OnClickLi
 
     @Override
     protected void initView() {
-        mFragments[0] = TestFragment.newInstance("欢迎页面");
+        mFragments[0] = EnterpriseBackgroundFragment.newInstance();
         mFragments[1] = TestFragment.newInstance("个人资料");
 
 //        findViewById(R.id.member_center_button_welcome).setOnClickListener(this);
@@ -47,28 +47,20 @@ public class MemberCenterFragment extends BaseFragment implements View.OnClickLi
     protected void initData() {
         mScroll.addButton("欢迎页面", null);
         mScroll.addButton("个人资料", null);
-        mScroll.addButton("个人资料", null);
-        mScroll.addButton("个人资料", null);
-        mScroll.addButton("个人资料", null);
-        mScroll.addButton("个人资料", null);
-        mScroll.addButton("个人资料", null);
-        mScroll.addButton("个人资料", null);
-        mScroll.addButton("个人资料", null);
-        mScroll.addButton("个人资料", null);
-        mScroll.addButton("个人资料", null);
-        mScroll.addButton("个人资料", null);
         saveData(true);
+        switchFragment(0);
     }
 
     @Override
     protected void resumeData() {
-
+        switchFragment((Integer) getSavedData());
     }
 
     private void switchFragment(int index) {
         FragmentTransaction transaction = getFragmentTransaction();
         transaction.replace(R.id.member_center_frame, mFragments[index]);
         transaction.commit();
+        saveData(index);
     }
 
     @Override

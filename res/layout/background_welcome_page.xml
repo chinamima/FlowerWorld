@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="14dp"
+        >
+
+    <LinearLayout
+            android:id="@+id/welcome_layout_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+        <TextView
+                android:id="@+id/welcome_text_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_preview"
+                android:textColor="#ffff00ff"
+                android:textSize="15sp"
+                android:includeFontPadding="false"
+                />
+
+        <TextView
+                android:id="@+id/welcome_text_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_word"
+                android:textColor="#ff666666"
+                android:textSize="17sp"
+                android:includeFontPadding="false"
+                android:layout_marginLeft="12dp"
+                />
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/welcome_button_sort_manage"
+            android:layout_below="@id/welcome_layout_company"
+            android:layout_width="113dp"
+            android:layout_height="37.7dp"
+            android:background="@drawable/blue_button_selector"
+            android:textColor="#ff999999"
+            android:textSize="16sp"
+            android:text="@string/welcome_sort_manage"
+            android:layout_marginTop="17dp"
+            />
+
+    <LinearLayout
+            android:id="@+id/welcome_layout_member_level"
+            android:layout_below="@id/welcome_button_sort_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_member_level"
+                android:textColor="#ff999999"
+                android:textSize="15sp"
+                android:includeFontPadding="false"
+                />
+
+        <TextView
+                android:id="@+id/welcome_text_member_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_word"
+                android:textColor="#ff666666"
+                android:textSize="15sp"
+                android:includeFontPadding="false"
+                android:layout_marginLeft="5dp"
+                />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/welcome_layout_sign_up_time"
+            android:layout_below="@id/welcome_layout_member_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="11dp"
+            >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_sign_up_time"
+                android:textColor="#ff999999"
+                android:textSize="15sp"
+                android:includeFontPadding="false"
+                />
+
+        <TextView
+                android:id="@+id/welcome_text_sign_up_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_word"
+                android:textColor="#ff666666"
+                android:textSize="15sp"
+                android:includeFontPadding="false"
+                android:layout_marginLeft="5dp"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/welcome_layout_valid_time"
+            android:layout_below="@id/welcome_layout_sign_up_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="11dp"
+            >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_valid_time"
+                android:textColor="#ff999999"
+                android:textSize="15sp"
+                android:includeFontPadding="false"
+                />
+
+        <TextView
+                android:id="@+id/welcome_text_valid_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_word"
+                android:textColor="#ff666666"
+                android:textSize="15sp"
+                android:includeFontPadding="false"
+                android:layout_marginLeft="5dp"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/welcome_layout_member_type"
+            android:layout_below="@id/welcome_layout_valid_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="11dp"
+            >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_member_type"
+                android:textColor="#ff999999"
+                android:textSize="15sp"
+                android:includeFontPadding="false"
+                />
+
+        <TextView
+                android:id="@+id/welcome_text_member_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_word"
+                android:textColor="#ff666666"
+                android:textSize="15sp"
+                android:includeFontPadding="false"
+                android:layout_marginLeft="5dp"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/welcome_layout_homepage_visit_count"
+            android:layout_below="@id/welcome_layout_member_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="11dp"
+            >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_homepage_visit_count"
+                android:textColor="#ff999999"
+                android:textSize="15sp"
+                android:includeFontPadding="false"
+                />
+
+        <TextView
+                android:id="@+id/welcome_text_homepage_visit_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_word"
+                android:textColor="#ff666666"
+                android:textSize="15sp"
+                android:includeFontPadding="false"
+                android:layout_marginLeft="5dp"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/welcome_layout_product_visit_count"
+            android:layout_below="@id/welcome_layout_homepage_visit_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="11dp"
+            >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_product_visit_count"
+                android:textColor="#ff999999"
+                android:textSize="15sp"
+                android:includeFontPadding="false"
+                />
+
+        <TextView
+                android:id="@+id/welcome_text_product_visit_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_word"
+                android:textColor="#ff666666"
+                android:textSize="15sp"
+                android:includeFontPadding="false"
+                android:layout_marginLeft="5dp"
+                />
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/welcome_text_helper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_helper"
+            android:textColor="#ff1b88bd"
+            android:textSize="15sp"
+            android:includeFontPadding="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="11dp"
+            />
+
+    <Button
+            android:id="@+id/welcome_button_publish_product"
+            android:layout_above="@id/welcome_text_helper"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_button_selector"
+            android:textSize="23sp"
+            android:textColor="#ff999999"
+            android:text="@string/welcome_publish_product"
+            android:layout_marginBottom="11dp"
+            />
+
+</RelativeLayout>

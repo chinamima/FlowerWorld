@@ -66,4 +66,7 @@ public class GlobalConstant {
     //favor
     public static final String URL_ADD_FAVOR = "/app/friend/addfavor/";
 
+    //background
+    public static final String URL_ENTERPRISE_WELCOME = "/app/member/index/";
+
 }

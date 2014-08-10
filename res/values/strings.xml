@@ -377,4 +377,17 @@
     <string name="background_main_bottom_menu_wechat">微信\n平台</string>
     <string name="exit">退出</string>
     <!-- more -->
+
+    <!-- background -->
+    <string name="welcome_preview"><u>预览</u></string>
+    <string name="welcome_sort_manage">栏目排序管理</string>
+    <string name="welcome_member_level">会员等级：</string>
+    <string name="welcome_sign_up_time">会员注册时间：</string>
+    <string name="welcome_valid_time">有效期：</string>
+    <string name="welcome_member_type">会员类型：</string>
+    <string name="welcome_homepage_visit_count">首页访客人次：</string>
+    <string name="welcome_product_visit_count">产品访客人次：</string>
+    <string name="welcome_publish_product">快速发布产品</string>
+    <string name="welcome_helper"><u>帮助手册</u></string>
+    <!-- background -->
 </resources>
